@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/Svg" href="img/Group 1.svg">
+  <title>Cara Memberi Warna Pada Gambar SVG di CSS</title>
+</head>
+
+<body>
+  <!-- ---------------------------------------------------------------NAV------------------------------------------------- -->
+  <nav>
+    <!-- Logo -->
+    <div class="logo"><a href="../../index.html">GapaiTech</a></div>
+    <!-- akhir Logo -->
+
+    <!-- Burger menu / menu list -->
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../tutorial/index2.html">Tutorial</a></li>
+      <li>
+        <label for="btn-1" class="show">Belajar<img class="down" width="14" height="14" src="img/down.png"></label>
+        <a>Belajar<img class="down" width="10" height="10" src="img/down.png"></a>
+        <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="../../belajar-html/index2.html">HTML</a></li>
+          <li><a href="../../belajar-css/index2.html">CSS</a></li>
+          <li><a href="../../belajar-javascript/index2.html">JAVASCRIPT</a></li>
+          <li><a href="../../tugas-kuliah/index2.html">TUGAS KULIAH</a></li>
+        </ul>
+      <li><a href="../../artikel/index2.html">Artikel</a></li>
+      <li><a href="../../tips-mahasiswa/index2.html">Tips Mahasiswa</a></li>
+      </li>
+      <li>
+      <li>
+        <input type="checkbox" id="btn-3">
+      </li>
+    </ul>
+    <!-- akhir Burger menu / menu list -->
+  </nav>
+  <!-- -----------------------------------------------------Akhir Nav-------------------------------------------------------->
+
+
+  <!-- ------------------------------------------------------Main--------------------------------------------------------->
+  <main>
+
+    <!-- pembungkus konten/display flex -->
+    <div class="container-content">
+      <!-- pembungks konten/ada efek shadownya -->
+      <div class="content-shadows">
+        <!-- box conten/display flex -->
+        <div class="box-content">
+          <!-- pembungkus back and go/display flex -->
+          <div class="link-content">
+            <p><a href="../../index.html">Home</a> <span class="link-right">>></span>Cara Memodifikasi Gambar SVG</p>
+          </div>
+          <!-- akhir pembungkus back and go/display flex -->
+
+          <!-- pembungkus judul -->
+          <div class="content-judul">
+            <h2>Cara Memodifikasi Gambar SVG</h2>
+          </div>
+          <!-- akhir pembungkus judul -->
+
+          <!-- pembungkus outhour/display flex -->
+          <div class="content-outhour">
+            <ul>
+              <li><img class="img-outhour" width="15" height="10" src="img/user.svg"> Muhammad Rizki</li>
+              <li><img class="img-outhour" width="10" height="10" src="img/calendar.svg"> 06 Nov 2021</li>
+              <li><img class="img-outhour" width="10" height="10" src="img/folder.svg"><a
+                  href="../../tutorial/index2.html"> Tutorial</a></li>
+            </ul>
+          </div>
+          <!-- akhir pembungkus outhour/display flex -->
+
+          <!-- pembungkus gambar contenT -->
+          <div class="content-image">
+            <img src="img/tutorial-modifSVG.png">
+          </div>
+          <!-- akhir pembungkus gambar contenT -->
+
+          <!-- pembungkus isi dari konten -->
+          <div class="isi-content">
+            <p>
+              Hai teman-teman apa kabar semua, saya harap kalien pada baik-baik saja, di kesempatan ini saya ingin
+              memberi tutorial atau cara bagaimana memodifikasi file gambar dalam format svg. Sebelum masuk ke
+              tutorialnya kalien udah pada tau gak apa itu svg?
+            </p>
+
+            <h3>
+              <br>Pengertian Svg
+            </h3>
+
+            <p>
+              Menurut wikipedia Scalable Vector Graphics (SVG) adalah format gambar yang menggunakan XML (Extensible
+              Markup Language) sebagai dasar untuk membentuk gambar vektor dua dimensi. SVG adalah format gambar yang
+              dikembangkan oleh World Wide Web Consortium (W3C) sejak tahun 1999.
+            </p>
+
+            <p><br>
+              Jadi svg itu gambar yang dibuat menggunakan bahasa markup yaitu xml (Extensible Markup Language) yang
+              dikembangkan oleh world wide web atau yang biasa kita kenal www pada tahun 1999.
+            </p>
+
+            <h3>
+              <br>Memodifikasi File Svg
+            </h3>
+
+            <p>
+              Dalam dunia pemrograman baik itu pemrograman web, android atau perograman apa pun itu pasti membutuhkan
+              yang namanya ui desain atau tampilan antarmuka pengguna, terutama desain pada button contohnya seperti
+              gambar di bawah ini
+            </p>
+
+            <br><img src="img/contoh.gif">
+
+            <p>
+              <br>Button pada gambar diatas adalah button yang dibuat dengan file gambar svg. Dengan memodifikasi warna
+              dan ukurannya yang sesuai dengan keinginan
+            </p>
+
+            <p>
+              <br>Sebenarnya ada banyak cara yang dapat kita gunakan untuk memodifikasi file svg agar sesuai keinginan
+              kita, pada tutorial ini saya akan memberi kan cara bagaimana biasanya saya memodifikasi file gambar dalam
+              format svg.
+            </p>
+
+            <h3>
+              <br>Cara Memodifikasi Gambar Svg
+            </h3>
+
+            <ol type="1">
+              <br>
+              <li>Pertama-tama tentu saja kita harus punya file svg</li>
+
+              <br>
+              <li>
+                buat code pada html.
+                <br>Di sini kerena file svg adalah gambar maka kita buat tag img pada html kita, contohnya :
+                <br><img src="img/class-img-html.PNG">
+              </li>
+
+              <br>
+              <li>
+                beri class pada tag img tersebut.
+                <br>Buat nama class yang kalien inginkan agar mempermudah untuk memodifikasi gambar svg tersebut, di
+                sini saya membuat nama classnya modif-svg, contohnya :
+                <br><img src="img/class-img-html.PNG">
+              </li>
+
+              <br>
+              <li>
+                Buat File Css
+                <br>Untuk bisa kita modifikasi gambar svg tersebut kita harus membuat file css terlebih dahulu.
+              </li>
+
+              <br>
+              <li>
+                Panggil class img yang telah kalien beri nama tadi, di sini saya menggunakan nama class modif-svg,
+                contohnya :
+                <br><img src="img/modif-svg-css.PNG">
+                <br>Gambar svg saya akan berubah menjadi lebar 50px dan tinggi 50px serta margin atas-bawah 300px
+                kanan-kiri 600px maka gambar svg saya akan tampak seperti ini:
+                <br><img src="img/gambar-svg-pada-web.PNG">
+                <br><strong>Catatan:</strong> lebar, tinggi serta margin kalien bisa sesuaikan dengan keinginan kalien
+              </li>
+
+              <br>
+              <li>
+                Mewarnai Gambar Svg
+                <br>Pada tahap ini kita membutuhkan trik untuk bisa mewarnai gambar svg kita, pertama-tama kita harus
+                tentukan warna apa yang ingin kita beri pada gambar svg kita, misalnya biru maka kita harus mengcopy
+                code hex warna biru
+
+                <br><br>Lalu buka url berikut <a
+                  href="https://codepen.io/sosuke/pen/Pjoqqp">https://codepen.io/sosuke/pen/Pjoqqp</a> Pastekan kode hex
+                tadi ke target color lalu klik Compute Filters
+                <br><img src="img/target-color.PNG">
+                <br><br>Lalu copy atribut fiter yang ada dipaling bawah web tersebut
+                <br><img src="img/filter-css.PNG">
+              </li>
+
+              <br>
+              <li>
+                Pastekan di file css tepatnya di class yang telah kalien buat, disini saya memberi nama class modif-svg
+                <br><img src="img/color-svg-finish.PNG">
+              </li>
+
+              <br>
+              <li>
+                Maka warna svg saya sekarang adalah biru
+                <br><img src="img/blue-svg.PNG">
+              </li>
+            </ol>
+
+            <p>
+              <br>Sampai sini kita sudah berhasil memodifikasi gambar svg kita, sekali lagi ini adalah salah satu dari
+              banyaknya cara yang bisa kita gunakan untuk memodifikasi gambar svg kita, dan ini adalah cara yang saya
+              gunakan untuk memodifikasi gambar svg saya,
+            </p>
+
+            <p>
+              <br>Sekian tutorial kali ini, dan terimakasih telah menyempatkan membaca artikel saya, sampai ketemu di
+              tutorial-tutorial selanjutnya.
+            </p>
+
+          </div>
+          <!-- pembungkus isi dari konten -->
+
+        </div>
+        <!-- akhir box conten/display flex -->
+      </div>
+      <!-- pembungks konten/ada efek shadownya -->
+    </div>
+    <!-- pembungkus konten -->
+
+    <div class="color-relatedPost">
+      <h2 class="box-title-relatedPost">Postingan Terkait</h2>
+      <!-- parent konten terkait/display flex -->
+      <div class="parent-relatedPost">
+        <!-- pembungkus konten terkait/display flex -->
+        <div class="relatedPost">
+          <!-- postingan terkaitnya -->
+          <div class="relatedPost-isi">
+            <!-- gambar postingan terkait 01 -->
+            <div class="img-relatedPost">
+              <img width="300" height="200" src="img/relatedpost-1.jpg">
+            </div>
+            <!-- akhir gambar postingan terkait 01 -->
+
+            <!-- penulis related post -->
+            <div class="outhour-relatedPost">
+              <ul>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/user.svg"> Muhammad Rizki</li>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/calendar.svg"> 31 Okt 2021
+                </li>
+              </ul>
+            </div>
+            <!-- akhir penulis related post -->
+
+            <!-- judul postingan terkait 01 -->
+            <div class="title-relatedPost">
+              <h3>Lorem ipsum dolor sit Lorem</h3>
+            </div>
+            <!-- akhir judul postingan terkait 01 -->
+
+            <!-- higlight postingan terkait -->
+            <div class="highlight-relatedPost">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure?..</p>
+            </div>
+            <!-- akhir higlight postingan terkait -->
+
+            <!-- read more postingan terkait -->
+            <div class="read-relatedPost">
+              <p><a href="#">Selengkapnya</a></p>
+            </div>
+            <!-- read more postingan terkait -->
+
+          </div>
+
+          <!-- postingan terkaitnya -->
+          <div class="relatedPost-isi">
+            <!-- gambar postingan terkait 02 -->
+            <div class="img-relatedPost">
+              <img width="300" height="200" src="img/relatedpost-2.jpg">
+            </div>
+            <!-- akhir gambar postingan terkait 02 -->
+
+            <!-- penulis related post -->
+            <div class="outhour-relatedPost">
+              <ul>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/user.svg"> Muhammad Rizki</li>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/calendar.svg"> 31 Okt 2021
+                </li>
+              </ul>
+            </div>
+            <!-- akhir penulis related post -->
+
+            <!-- judul postingan terkait 02 -->
+            <div class="title-relatedPost">
+              <h3>Lorem ipsum dolor sit Lorem</h3>
+            </div>
+            <!-- akhir judul postingan terkait 01 -->
+
+            <!-- higlight postingan terkait 02-->
+            <div class="highlight-relatedPost">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure?..</p>
+            </div>
+            <!-- akhir higlight postingan terkait 02 -->
+
+            <!-- read more postingan terkait 02 -->
+            <div class="read-relatedPost">
+              <p><a href="#">Selengkapnya</a></p>
+            </div>
+            <!-- read more postingan terkait 02 -->
+
+          </div>
+
+          <!-- postingan terkaitnya 03 -->
+          <div class="relatedPost-isi">
+            <!-- gambar postingan terkait 03 -->
+            <div class="img-relatedPost">
+              <img width="300" height="200" src="img/relatedpost-3.jpg">
+            </div>
+            <!-- akhir gambar postingan terkait 03 -->
+
+            <!-- penulis related post -->
+            <div class="outhour-relatedPost">
+              <ul>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/user.svg"> Muhammad Rizki</li>
+                <li><img class="outhour-relatedPostColor" width="10" height="10" src="img/calendar.svg"> 31 Okt 2021
+                </li>
+              </ul>
+            </div>
+            <!-- akhir penulis related post -->
+
+            <!-- judul postingan terkait 03 -->
+            <div class="title-relatedPost">
+              <h3>Lorem ipsum dolor sit Lorem</h3>
+            </div>
+            <!-- akhir judul postingan terkait 03 -->
+
+            <!-- higlight postingan terkait -->
+            <div class="highlight-relatedPost">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure?..</p>
+            </div>
+            <!-- akhir higlight postingan terkait -->
+
+            <!-- read more postingan terkait -->
+            <div class="read-relatedPost">
+              <p><a href="#">Selengkapnya</a></p>
+            </div>
+            <!-- read more postingan terkait -->
+
+          </div>
+
+        </div>
+        <!-- akhir pembungkus konten terkait -->
+      </div>
+      <!-- akhir parent konten terkait/display flex -->
+    </div>
+
+  </main>
+  <!-- ------------------------------------------------------Akhir Main------------------------------------------------- -->
+
+  <footer>
+    <div class="container-footer">
+      <h3 class="me"><a href="https://mhdky.github.io/muhammadrizki/">About Me</a></h3>
+
+      <ul class="footer-list">
+        <li><a href="https://web.facebook.com/profile.php?id=100025237001674"><img class="footer-color" width="20"
+              height="20" src="img/facebook.svg"></a></li>
+        <li><a href="https://t.me/kyrizky"><img class="footer-color" width="20" height="20" src="img/telegram.svg"></a>
+        </li>
+        <li><a href="https://www.instagram.com/mhdky_10/"><img class="footer-color" width="20" height="20"
+              src="img/instagram.svg"></a></li>
+        <li><a href="https://github.com/mhdky"><img class="footer-color" width="20" height="20"
+              src="img/github.svg"></a></li>
+      </ul>
+
+      <p class="copyright">Copyright © 2021 | GapaiTech All Right Reserved</p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top">
+    <img class="top-color" width="30" height="30" src="img/up.svg">
+  </a>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
